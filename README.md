@@ -1,2 +1,2 @@
-INSTALL FLASK : pip install flask
-RUN : python app.py
+INSTALL FLASK : pip install flask  ||  RUN : python app.py
+
