@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi {{ currency }}</title>
+</head>
+<body>
+    <h1>Konversi {{ currency }} ke IDR</h1>
+    <form method="POST">
+        <label for="nilai">Masukkan jumlah {{ currency }}</label>
+        <input type="number" id="nilai" name="nilai" required>
+        <button type="submit">Konversi</button>
+    </form>
+
+    {% if result is not none %}
+        <h2>Hasil: {{ result }} IDR</h2>
+    {% endif %}
+
+    <a href="/">Kembali ke Halaman Utama</a>
+</body>
+</html>
